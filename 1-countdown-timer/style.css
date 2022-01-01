@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./snow.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 1.3rem;
+}
+
+label {
+  padding-top: 2rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 1rem 0;
+  width: 7rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: aqua;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  width: 10rem;
+  font-size: 1rem;
+  color: red;
+  background: gold;
+  border-radius: 10px;
+  padding: 8px 15px;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}

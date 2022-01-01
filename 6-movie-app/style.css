@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #373b69;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.movie {
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  height: 400px;
+  margin: 1rem 0;
+}
+
+.movie .inner{
+  background-color: #373b69;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+
+.movie img {
+  width: 100%;
+  max-height: 70%;
+  object-fit: cover;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 10px;
+  letter-spacing: 0.5px;
+}
+
+.movie-info div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.movie-info h4,.movie-info h5{
+  margin: 0;
+}
+
+.movie-info span {
+  background-color: #22254b;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+.movie-info span.green {
+  color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: rgb(189, 42, 42);
+}
+
+.overview {
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+}
+
+.overview h3,
+.overview p {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+a {
+  text-decoration: none;
+  width: 10rem;
+  font-size: 1rem;
+  color: red;
+  background: aliceblue;
+  border-radius: 10px;
+  padding: 8px 15px;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+nav div{
+  color: white;
+}
+
+nav div select{
+  padding: 3px 5px;
+  font-size: 15px;
+}
+
+nav button{
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: bold;
+  background: burlywood;
+  transition: .5s ease;
+}
+
+nav button:hover{
+  background: cadetblue;
+}

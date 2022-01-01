@@ -1,0 +1,63 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "vazir";
+  direction: rtl;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+main {
+  width: 1000px;
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  width: 300px;
+  height: 200px;
+  align-self: center;
+  position: relative;
+  background: blue;
+}
+
+section img {
+  width: 100%;
+}
+
+section span {
+  width: 95px;
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid #8a8a8a;
+  visibility: hidden;
+}
+
+div {
+  width: 600px;
+  height: 500px;
+  border: 1px solid #e5e5e5;
+  align-self: center;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  width: 10rem;
+  font-size: 1rem;
+  color: red;
+  background: gold;
+  border-radius: 10px;
+  padding: 8px 15px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
